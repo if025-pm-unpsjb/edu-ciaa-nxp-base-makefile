@@ -1,5 +1,5 @@
 # ciaa-example-makefile
-Programa de prueba para la placa EDU-CIAA-NXP, tomado de los ejemplos provisto en el IDE [CIAA Suite](https://github.com/ciaa/Software-IDE/releases). A continuación como se describe como importarlo en Eclipse y ejecutarlo en la placa.
+Programa de prueba para la placa EDU-CIAA-NXP, tomado de los ejemplos provisto en el IDE [CIAA Suite](https://github.com/ciaa/Software-IDE/releases). A continuación se describe como importarlo en Eclipse y ejecutarlo en la placa.
 
 ---
 
