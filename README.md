@@ -14,10 +14,10 @@ Clonar el proyecto usando Git:
 
 ## Importar el proyecto en Eclipse
 Una vez clonado localmente, agregar el proyecto en Eclipse:
-* Seleccionar **[File > Makefile project with existing code]**. 
+* Seleccionar **[File > New > Makefile project with existing code]**. 
 * En la nueva ventana:
     * En **[Existing Code Location]** indicar el *path* al proyecto (usar el botón **[Browse...]**).
-    * En **[Toolchain for Indexer]** seleccionar la opción *Cross ARM GCC* (¡importante!).
+    * En **[Toolchain for Indexer]** seleccionar la opción *ARM Cross GCC* (¡importante!).
 
 El proyecto debe aparecer ahora en la vista *Project Explorer*: 
 * Hacer clic derecho sobre el mismo, y seleccionar **[Properties]** en el menú contextual.
@@ -41,7 +41,7 @@ Primero, verificar que `openocd` este correctamente configurado en Eclipse:
 * Seleccionar **[Windows > Preferences]** en el menú de Eclipse.
 * En la nueva ventana, seleccionar **[MCU > Global OpenOCD Path]** en la lista izquierda.
 * En el campo *Executable* debe indicar `openocd.exe` (sin la extensión en Linux o MacOS), y el campo *Folder* debe contener el *path* al ejecutable.
-* Hacer clic en **[Ok]**.
+* Hacer clic en **[Apply and Close]**.
 
 A continuación se creará y ejecutará una configuración de *debug*:
 * Seleccionar **[Run > Debug Configurations...]** en el menú de Eclipse.
@@ -58,4 +58,4 @@ Para ejecutar el programa por primera vez, conectar la placa si no lo estuviera 
 ---
     
 ## Próximas ejecuciones
-Para cargar el programa en la placa y ejecutarlo, la opción más sencilla es hacer clic ícono **[Debug]** en la barra de herramientas de Eclipse, que ejecuta el último perfil seleccionado. Si se desea cambiar el perfil, hacer clic en la flecha que se encuentra junto al ícono **[Debug]**, y de la lista desplegable que se presenta, seleccionar el proyecto, o bien hacer clic en **[Debug Configurations...]**, que abre la ventana de configuración del punto anterior.
+Para cargar el programa en la placa y ejecutarlo, la opción más sencilla es hacer clic en el ícono **[Debug]**, en la barra de herramientas de Eclipse, para ejecutar nuevamente el último perfil utilizado. Si se desea cambiar el perfil, hacer clic en la flecha que se encuentra junto al ícono **[Debug]** y de la lista desplegable que se presenta, seleccionar el perfil deseado, o hacer clic en la opción **[Debug Configurations...]**, para abrir la ventana de configuración vista en el punto anterior.
