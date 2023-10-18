@@ -36,6 +36,22 @@ Si el proyecto compilo correctamente, en la vista **[Console]** debe indicarse q
 
 ---
 
+## Configurar reglas udev
+
+Crear el archivo `/etc/udev/rules.d/edu-ciaa-nxp.rules` con el siguiente contenido:
+
+```
+SUBSYSTEM=="usb", ATTR{idVendor}=="0403", ATTR{idProduct}=="6010", MODE:="666"
+```
+
+Luego, para actualizar las reglas del sistema sin necesidad de reiniciar, ejecutar:
+```
+$ sudo udevadm control --reload
+$ sudo udevadm trigger
+```
+
+---
+
 ## Configurar entorno OpenOCD
 Primero, verificar que `openocd` este correctamente configurado en Eclipse:
 * Seleccionar **[Windows > Preferences]** en el menú de Eclipse.
