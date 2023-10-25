@@ -109,6 +109,7 @@ bool_t tickInit( tick_t tickRateMSvalue )
       return ret_val;
    #else
       #ifdef USE_FREERTOS
+#if configUSE_TIMERS == 1
          static StaticTimer_t tickerObject;
          TimerHandle_t h = xTimerCreateStatic( "tikcerTimer",
                                                (TickType_t)(tickRateMSvalue),
@@ -120,6 +121,9 @@ bool_t tickInit( tick_t tickRateMSvalue )
          if (h == NULL)
             return 0;
          return xTimerStart(h, 0) == pdPASS;
+#else
+         return 0;
+#endif
       #else
          #warning "Unknown RTOS. Ticker disabled"
             return 0;
