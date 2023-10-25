@@ -27,12 +27,14 @@ El proyecto debe aparecer ahora en la vista *Project Explorer*:
 ---
 
 ## Compilar
+Realizar una copia del archivo `Makefile.config` con el nombre `Makefile.mine`. En este nuevo archivo, se indica cual de las aplicaciones incluidas se debe compilar, modificando la variable `PROJECT_NAME`. Por defecto se compila la aplicación `example`.
+
 Finalmente, para compilar el proyecto se puede:
 * Hacer clic derecho sobre el proyecto en la vista *Project Explorer* y seleccionar **[Build]** en el menú contextual.
 * Seleccionar en la barra de menúes de Eclipse **[Project > Build Project]**.
 * Hacer clic en el ícono *Build* (un martillo).
 
-Si el proyecto compilo correctamente, en la vista **[Console]** debe indicarse que se generó correctamente el archivo `app/out/app.elf`.
+Si el proyecto compilo correctamente, en la vista **[Console]** debe indicarse que se generó correctamente el archivo `apps/example/out/example.elf`.
 
 ---
 

@@ -6,7 +6,8 @@
 
 // DEPENDENCIAS
 
-#include "app.h"         // <= Su propia cabecera (opcional)
+#include "../../example/inc/app.h"         // <= Su propia cabecera (opcional)
+
 #include "sapi.h"        // <= Biblioteca sAPI
 
 // FUNCION PRINCIPAL, PUNTO DE ENTRADA AL PROGRAMA LUEGO DE ENCENDIDO O RESET.

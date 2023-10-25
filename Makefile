@@ -1,9 +1,7 @@
-# -------- Project path and name default values ------------------------
-# Project path
-# relative to this folder, leave void if the project is in this folder
-PROJECT_PATH =
-# Project name
-PROJECT_NAME = app
+#
+# Modify example to build in Makefile.mine
+#
+-include Makefile.mine
 
 # Compose project path and name
 ifeq ($(PROJECT_PATH),)

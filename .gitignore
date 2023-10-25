@@ -42,6 +42,8 @@ language.settings.xml
 *.launch
 
 # ignore contents of build directory
-app/out/**
+apps/*/out/**
 
 *.csv
+
+Makefile.config
