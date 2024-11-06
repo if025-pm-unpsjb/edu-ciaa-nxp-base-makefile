@@ -46,4 +46,4 @@ apps/*/out/**
 
 *.csv
 
-Makefile.config
+Makefile.mine
